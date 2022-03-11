@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  background-color: #2c3e50;
+  color: #2c3e50;
+}
+.container {
+  position: relative;
+  width: 700px;
+  min-height: 150px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 50px;
+}
+[v-cloak] .container > * {
+  visibility: hidden;
+}
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.paragraph {
+  font-size: 14px;
+  height: 30px;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.steps__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.steps__counter {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.active {
+  background-color: #42b983;
+  color: #fff;
+}
+.done {
+  background-color: #42b983;
+}
+.pagination__btn {
+  padding: 5px 15px;
+  margin-right: 15px;
+  border-radius: 100px;
+  border: 1px solid #42b983;
+  outline: none;
+  background-color: #ccc;
+  cursor: pointer;
+  font-weight: 700;
+}
+.pagination__next {
+  background-color: #42b983;
+  color: #fff;
+}
+.pagination__prev {
+  background-color: #fff;
+  color: #42b983;
+}
+[disabled] {
+  cursor: not-allowed;
+  background-color: #eee;
+  border-color: #ddd;
+  color: #aaa;
+}
